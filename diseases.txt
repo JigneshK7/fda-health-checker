@@ -1,0 +1,22 @@
+arthritis
+asthma
+cancer
+depression
+diabetes
+epilepsy
+heart disease
+hepatitis
+osteoporosis
+osteosarcoma
+osteo
+osteosarcopenia
+fracture
+sarcopenia
+atrophy
+muscle damage
+damage
+hypertension
+obesity
+osteoarthritis
+high blood sugar
+stroke
