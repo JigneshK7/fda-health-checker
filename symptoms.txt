@@ -1,70 +1,233 @@
-abdominal pain
-acid reflux
-anxiety
-bleeding
-bloating
-blood in urine
-blurred vision
-bruising
-burning
-chest pain
-chills
-confusion
-constipation
-cough
-cramps
+aids
+alzheimer's disease
+aneurysm
+angina
+anorexia
+anxiety disorder
+arrhythmia
+arthritis
+asthma
+atrophy
+bipolar disorder
+bronchial asthma
+bulimia
+cancer
+carcinoma
+celiac disease
+coronary artery disease
+covid-19
+crohn's disease
+damage
 depression
-diarrhea
-difficulty sleeping
-dizziness
-dry cough
-excessive sleepiness
-fainting
-fatigue
-fever
-frequent urination
-gas
-hallucinations
-headache
-hot flashes
-indigestion
-inflammation
-insomnia
-irregular heartbeat
-irritability
-itching
+dermatitis
+diabetes
+diabetic neuropathy
+eczema
+epilepsy
+flu
+fracture
+gestational diabetes
+gout
+heart disease
+heart failure
+hepatitis
+hepatitis a
+hepatitis b
+hepatitis c
+hiv
+hypertension
+hyperthyroidism
+hypotension
+hypothyroidism
+ibs
+influenza
+kidney disease
+leukemia
+liver disease
+lupus
+lymphoma
+melanoma
+multiple sclerosis
+muscle damage
+muscular dystrophy
+myocardial infarction
+obesity
+ocd
+osteoarthritis
+osteoporosis
+osteo
+osteosarcoma
+osteosarcopenia
+parkinson's disease
+psoriasis
+psoriatic arthritis
+ptsd
+renal failure
+rheumatoid arthritis
+sarcoma
+sarcopenia
+schizophrenia
+scleroderma
+seizure disorder
+sjogren's syndrome
+skin cancer
+stroke
+thyroid disorder
+type 1 diabetes
+T2DM
+type 2 diabetes
+ulcerative colitis
+urinary tract infection
 joint pain
-lethargy
-light sensitivity
-loss of appetite
-memory loss
-migraines
-mood swings
-muscle cramps
+inflammation
+headache
+fatigue
 nausea
-night sweats
-numbness
-pain
-painful urination
-pains
-palpitations
-panic attacks
-pelvic pain
-productive cough
-rash
-redness
-restlessness
-shortness of breath
-skin irritation
-spasms
-stiffness
-sweating
-swelling
-tingling
-vertigo
 vomiting
-weakness
-weight gain
+bloating
+constipation
+diarrhea
+cramps
+cough
+fever
+cold
+flu
+eczema
+arthritis
+asthma
+cancer
+depression
+diabetes
+epilepsy
+heart disease
+hepatitis
+osteoporosis
+osteosarcoma
+osteo
+osteosarcopenia
+fracture
+sarcopenia
+atrophy
+muscle damage
+damage
+hypertension
+obesity
+osteoarthritis
+high blood sugar
+stroke
+psoriasis
+allergy
+allergies
+migraine
+anxiety
+insomnia
+dizziness
+shortness of breath
+arthritis
+soreness
+pain
+stiffness
+burning
+itching
+rash
+bleeding
+infection
+swelling
+wound
+bruise
+irritation
+asthma
+blood pressure
+cholesterol
+glucose
+diabetes
+obesity
 weight loss
-wheezing
-wounds
+fatigue
+dry eyes
+sensitivity
+urinary tract infection
+UTI
+gas
+indigestion
+disease
+diseases
+disorders
+disorder
+Hot flash
+hot flashes
+hot flushes
+hot flush
+night sweat
+night sweats
+chill
+chills
+flush
+flushes
+irregular period
+irregular periods
+skipped period
+skipped periods
+heavy bleeding
+heavier bleeding
+light bleeding
+lighter bleeding
+vaginal dryness
+vaginal dry sensation
+vaginal itch
+vaginal itching
+vaginal irritation
+pain during intercourse
+painful intercourse
+dyspareunia
+low libido
+decreased libido
+urinary urgency
+frequent urination
+urinary frequency
+urinary tract infections
+UTIs
+mood swing
+mood swings
+irritability
+anxiousness
+depression
+sleep disturbance
+sleep disturbances
+concentration difficulty
+difficulty concentrating
+brain fog
+memory problem
+memory problems
+joint pain
+joint pains
+joint stiffness
+muscle ache
+muscle aches
+osteoporosis
+bone loss
+dry skin
+skin dryness
+skin thinning
+thin skin
+hair thinning
+hair loss
+increased facial hair
+weight gain
+abdominal fat
+slowed metabolism
+tiredness
+high cholesterol
+increased LDL
+headache
+headaches
+palpitation
+palpitations
+breast tenderness
+tender breasts
+breast fullness loss
+tingling
+tingling sensation
+paresthesia
+dizziness
+dizzy spells
