@@ -1,5 +1,6 @@
 
 from flask import Flask, request, render_template_string
+import os
 
 app = Flask(__name__)
 
@@ -22,7 +23,6 @@ def index():
         claim = request.form.get("claim", "").lower().strip()
         searched = claim
 
-        # Check against red flag, diseases, symptoms
         if any(word in claim for word in red_flag_keywords) or any(d in claim for d in disease_keywords) or any(s in claim for s in symptom_keywords):
             is_compliant = False
             result = "❌ Non-compliant: Claim appears to reference a drug-like benefit or symptom/disease."
@@ -33,4 +33,5 @@ def index():
     return render_template_string(HTML_TEMPLATE, searched=searched, result=result, is_compliant=is_compliant)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host="0.0.0.0", port=port)
