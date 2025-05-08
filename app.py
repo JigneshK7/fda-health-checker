@@ -1,15 +1,17 @@
 
 from flask import Flask, request, render_template_string
 import os
+import re
 
 app = Flask(__name__)
 
-with open("diseases.txt", "r", encoding="utf-8") as f:
-    disease_keywords = [line.strip().lower() for line in f if line.strip()]
-with open("symptoms.txt", "r", encoding="utf-8") as f:
-    symptom_keywords = [line.strip().lower() for line in f if line.strip()]
-with open("redflag.txt", "r", encoding="utf-8") as f:
-    red_flag_keywords = [line.strip().lower() for line in f if line.strip()]
+def load_keywords(filename):
+    with open(filename, "r", encoding="utf-8") as f:
+        return set(line.strip().lower() for line in f if line.strip())
+
+red_flag_keywords = load_keywords("redflag.txt")
+disease_keywords = load_keywords("diseases.txt")
+symptom_keywords = load_keywords("symptoms.txt")
 
 HTML_TEMPLATE = open("template.html", "r", encoding="utf-8").read()
 
@@ -20,10 +22,12 @@ def index():
     is_compliant = True
 
     if request.method == "POST":
-        claim = request.form.get("claim", "").lower().strip()
+        claim = request.form.get("claim", "").strip().lower()
         searched = claim
+        claim_words = set(re.findall(r"\b\w+\b", claim))
 
-        if any(word in claim for word in red_flag_keywords) or any(d in claim for d in disease_keywords) or any(s in claim for s in symptom_keywords):
+        # Exact word match against keyword sets
+        if (red_flag_keywords & claim_words) or (disease_keywords & claim_words) or (symptom_keywords & claim_words):
             is_compliant = False
             result = "❌ Non-compliant: Claim appears to reference a drug-like benefit or symptom/disease."
         else:
