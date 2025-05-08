@@ -1,22 +1,81 @@
+aids
+alzheimer's disease
+aneurysm
+angina
+anorexia
+anxiety disorder
+arrhythmia
 arthritis
 asthma
-cancer
-depression
-diabetes
-epilepsy
-heart disease
-hepatitis
-osteoporosis
-osteosarcoma
-osteo
-osteosarcopenia
-fracture
-sarcopenia
 atrophy
-muscle damage
+bipolar disorder
+bronchial asthma
+bulimia
+cancer
+carcinoma
+celiac disease
+coronary artery disease
+covid-19
+crohn's disease
 damage
+depression
+dermatitis
+diabetes
+diabetic neuropathy
+eczema
+epilepsy
+flu
+fracture
+gestational diabetes
+gout
+heart disease
+heart failure
+hepatitis
+hepatitis a
+hepatitis b
+hepatitis c
+hiv
 hypertension
+hyperthyroidism
+hypotension
+hypothyroidism
+ibs
+influenza
+kidney disease
+leukemia
+liver disease
+lupus
+lymphoma
+melanoma
+multiple sclerosis
+muscle damage
+muscular dystrophy
+myocardial infarction
 obesity
+ocd
 osteoarthritis
-high blood sugar
+osteoporosis
+osteo
+osteosarcoma
+osteosarcopenia
+parkinson's disease
+psoriasis
+psoriatic arthritis
+ptsd
+renal failure
+rheumatoid arthritis
+sarcoma
+sarcopenia
+schizophrenia
+scleroderma
+seizure disorder
+sjogren's syndrome
+skin cancer
 stroke
+thyroid disorder
+type 1 diabetes
+type 2 diabetes
+T2DM
+ulcerative colitis
+urinary tract infection
+uti
