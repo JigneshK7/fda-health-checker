@@ -34,24 +34,21 @@ def index():
         disease_hit = disease_keywords & claim_words
         symptom_hit = symptom_keywords & claim_words
 
-        # Determine if safe context applies for red flag term (e.g., aids in, helps with)
-        safe_usage_detected = False
-        for word in safe_verb_context:
-            if re.search(rf"\b{word}\b\s+(?:{'|'.join(prepositions)})\b", claim):
-                if red_flag_hit == {word} and not (disease_hit or symptom_hit):
-                    safe_usage_detected = True
-                break
+        # Improved: Treat "aids" carefully when it's the only match in disease list and used as a verb
+        aids_used_as_disease = "aids" in disease_hit and not re.search(r"\baids\b\s+(?:in|with|for|to)\b", claim)
+        if aids_used_as_disease:
+            disease_hit.remove("aids")  # keep it flagged
+        elif "aids" in disease_hit:
+            disease_hit.remove("aids")  # allow safe usage if contextually verb
 
-        if red_flag_hit or disease_hit or symptom_hit:
-            if not safe_usage_detected:
-                is_compliant = False
-                result = "❌ Non-compliant: Claim appears to reference a drug-like benefit or symptom/disease."
-            else:
-                is_compliant = True
-                result = "✅ Compliant: Claim appears to focus on general structure/function or wellness."
+        is_flagged = bool(red_flag_hit or disease_hit or symptom_hit)
+
+        if is_flagged:
+            result = "❌ Non-compliant: Claim appears to reference a drug-like benefit or symptom/disease."
+            is_compliant = False
         else:
-            is_compliant = True
             result = "✅ Compliant: Claim appears to focus on general structure/function or wellness."
+            is_compliant = True
 
     return render_template_string(HTML_TEMPLATE, searched=searched, result=result, is_compliant=is_compliant)
 
