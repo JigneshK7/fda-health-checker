@@ -1,4 +1,6 @@
-aids
+AIDS
+hypersensitivity
+adhd
 alzheimer's disease
 aneurysm
 angina
@@ -39,8 +41,22 @@ hypertension
 hyperthyroidism
 hypotension
 hypothyroidism
+high blood sugar
+high blood glucose
 ibs
+ibs-c
+ibs-d
+ibs-m
+irritable bowel syndrome
+IBD
+Inflammatory Bowel Disease
 influenza
+insomnia
+inflammation
+inflammatory
+ketouria
+uria
+ketoacidosis
 kidney disease
 leukemia
 liver disease
@@ -66,8 +82,16 @@ parkinson's disease
 psoriasis
 psoriatic arthritis
 ptsd
+pcos
+cyst
+cystic
+ovarian syndrome
+syndrome
 renal failure
 rheumatoid arthritis
+sleeplessness
+sleep disturbance
+disturbed sleep
 sarcoma
 sarcopenia
 schizophrenia

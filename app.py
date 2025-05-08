@@ -15,6 +15,10 @@ symptom_keywords = load_keywords("symptoms.txt")
 
 HTML_TEMPLATE = open("template.html", "r", encoding="utf-8").read()
 
+# Words that can be used as a verb safely
+safe_verb_context = {"aids", "supports", "helps", "promotes", "assists"}
+prepositions = {"in", "with", "for", "to"}
+
 @app.route("/", methods=["GET", "POST"])
 def index():
     searched = ""
@@ -26,8 +30,20 @@ def index():
         searched = claim
         claim_words = set(re.findall(r"\b\w+\b", claim))
 
-        # Exact word match against keyword sets
-        if (red_flag_keywords & claim_words) or (disease_keywords & claim_words) or (symptom_keywords & claim_words):
+        # Check for safe use of certain words like 'aids'
+        safe_usage_detected = False
+        for word in safe_verb_context:
+            if re.search(rf"\b{word}\b\s+(?:{'|'.join(prepositions)})\b", claim):
+                safe_usage_detected = True
+                break
+
+        # Apply compliance logic
+        if (
+            (red_flag_keywords & claim_words or
+             disease_keywords & claim_words or
+             symptom_keywords & claim_words)
+            and not safe_usage_detected
+        ):
             is_compliant = False
             result = "❌ Non-compliant: Claim appears to reference a drug-like benefit or symptom/disease."
         else:
