@@ -15,7 +15,6 @@ symptom_keywords = load_keywords("symptoms.txt")
 
 HTML_TEMPLATE = open("template.html", "r", encoding="utf-8").read()
 
-# Words that can be used as a verb safely
 safe_verb_context = {"aids", "supports", "helps", "promotes", "assists"}
 prepositions = {"in", "with", "for", "to"}
 
@@ -34,21 +33,27 @@ def index():
         disease_hit = disease_keywords & claim_words
         symptom_hit = symptom_keywords & claim_words
 
-        # Improved: Treat "aids" carefully when it's the only match in disease list and used as a verb
-        aids_used_as_disease = "aids" in disease_hit and not re.search(r"\baids\b\s+(?:in|with|for|to)\b", claim)
-        if aids_used_as_disease:
-            disease_hit.remove("aids")  # keep it flagged
-        elif "aids" in disease_hit:
-            disease_hit.remove("aids")  # allow safe usage if contextually verb
+        # Separate out 'aids' usage if it's the only issue
+        only_aids = (
+            red_flag_hit == {"aids"} or disease_hit == {"aids"} or symptom_hit == {"aids"}
+        ) and not (
+            (red_flag_hit | disease_hit | symptom_hit) - {"aids"}
+        )
 
-        is_flagged = bool(red_flag_hit or disease_hit or symptom_hit)
-
-        if is_flagged:
-            result = "❌ Non-compliant: Claim appears to reference a drug-like benefit or symptom/disease."
+        if only_aids:
+            # Check if 'aids' is followed by valid structure/function language, not symptom/disease
+            if re.search(r"\baids\b(?!\s+(?:in|with|for|to))\s+\b(?!pain|fracture|osteoporosis|arthritis|joint|diabetes)\w+\b", claim):
+                is_compliant = True
+                result = "✅ Compliant: Claim appears to focus on general structure/function or wellness."
+            else:
+                is_compliant = False
+                result = "❌ Non-compliant: Claim appears to reference a drug-like benefit or symptom/disease."
+        elif red_flag_hit or disease_hit or symptom_hit:
             is_compliant = False
+            result = "❌ Non-compliant: Claim appears to reference a drug-like benefit or symptom/disease."
         else:
-            result = "✅ Compliant: Claim appears to focus on general structure/function or wellness."
             is_compliant = True
+            result = "✅ Compliant: Claim appears to focus on general structure/function or wellness."
 
     return render_template_string(HTML_TEMPLATE, searched=searched, result=result, is_compliant=is_compliant)
 
