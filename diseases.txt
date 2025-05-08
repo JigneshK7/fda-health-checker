@@ -58,6 +58,10 @@ osteoporosis
 osteo
 osteosarcoma
 osteosarcopenia
+disease
+diseases
+disorder
+disorders
 parkinson's disease
 psoriasis
 psoriatic arthritis
