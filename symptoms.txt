@@ -39,6 +39,7 @@ hyperthyroidism
 hypotension
 hypothyroidism
 ibs
+inflammaging
 influenza
 kidney disease
 leukemia
@@ -47,7 +48,7 @@ lupus
 lymphoma
 melanoma
 multiple sclerosis
-muscle damage
+muscle breakdown
 muscular dystrophy
 myocardial infarction
 obesity
@@ -69,6 +70,7 @@ schizophrenia
 scleroderma
 seizure disorder
 sjogren's syndrome
+syndrome
 skin cancer
 stroke
 thyroid disorder

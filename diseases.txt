@@ -2,6 +2,10 @@
 hypersensitivity
 adhd
 alzheimer's disease
+allergy
+allergic
+atopic
+dermatitis
 aneurysm
 angina
 anorexia
@@ -11,6 +15,10 @@ arthritis
 asthma
 atrophy
 bipolar disorder
+high blood sugar
+high blood glucose
+fasting blood sugar
+fasting blood glucose
 bronchial asthma
 bulimia
 cancer
@@ -72,6 +80,7 @@ ocd
 osteoarthritis
 osteoporosis
 osteo
+pruritis
 osteosarcoma
 osteosarcopenia
 disease
@@ -87,6 +96,7 @@ cyst
 cystic
 ovarian syndrome
 syndrome
+syndromes
 renal failure
 rheumatoid arthritis
 sleeplessness
@@ -107,3 +117,258 @@ T2DM
 ulcerative colitis
 urinary tract infection
 uti
+ADHD
+hypersensitivity
+alzheimer's disease
+aneurysm
+angina
+anorexia
+anxiety disorder
+arrhythmia
+arthritis
+asthma
+atrophy
+bipolar disorder
+bronchial asthma
+bulimia
+cancer
+carcinoma
+celiac disease
+coronary artery disease
+covid-19
+crohn's disease
+damage
+depression
+dermatitis
+diabetes
+diabetic neuropathy
+eczema
+epilepsy
+flu
+fracture
+gestational diabetes
+gout
+heart disease
+heart failure
+hepatitis
+hepatitis a
+hepatitis b
+hepatitis c
+hiv
+hypertension
+hyperthyroidism
+hypotension
+hypothyroidism
+high blood sugar
+high blood glucose
+ibs
+ibs-c
+ibs-d
+ibs-m
+irritable bowel syndrome
+IBD
+syndromes
+inflammaging
+inflammalgia
+inflammation
+Inflammatory Bowel Disease
+influenza
+kidney disease
+leukemia
+liver disease
+lupus
+lymphoma
+melanoma
+multiple sclerosis
+muscle damage
+muscular dystrophy
+myocardial infarction
+obesity
+ocd
+osteoarthritis
+osteoporosis
+osteo
+osteosarcoma
+osteosarcopenia
+parkinson's disease
+psoriasis
+pcos
+cyst
+cystic
+ovarian syndrome
+syndrome
+psoriatic arthritis
+ptsd
+renal failure
+rheumatoid arthritis
+sarcoma
+sarcopenia
+schizophrenia
+scleroderma
+seizure disorder
+sjogren's syndrome
+skin cancer
+stroke
+thyroid disorder
+type 1 diabetes
+T2DM
+type 2 diabetes
+ulcerative colitis
+urinary tract infection
+joint pain
+inflammation
+headache
+fatigue
+nausea
+vomiting
+bloating
+constipation
+diarrhea
+cramps
+cough
+fever
+cold
+flu
+eczema
+arthritis
+asthma
+cancer
+depression
+diabetes
+epilepsy
+heart disease
+hepatitis
+osteoporosis
+osteosarcoma
+osteo
+osteosarcopenia
+fracture
+sarcopenia
+atrophy
+muscle breakdown
+damage
+hypertension
+obesity
+osteoarthritis
+high blood sugar
+stroke
+psoriasis
+allergy
+allergies
+migraine
+anxiety
+insomnia
+dizziness
+shortness of breath
+arthritis
+soreness
+pain
+stiffness
+burning
+itching
+rash
+bleeding
+infection
+swelling
+wound
+bruise
+irritation
+asthma
+blood pressure
+cholesterol
+glucose
+diabetes
+obesity
+weight loss
+fatigue
+dry eyes
+sensitivity
+urinary tract infection
+UTI
+gas
+indigestion
+disease
+diseases
+disorders
+disorder
+Hot flash
+hot flashes
+hot flushes
+hot flush
+night sweat
+night sweats
+chill
+chills
+flush
+flushes
+irregular period
+irregular periods
+skipped period
+skipped periods
+heavy bleeding
+heavier bleeding
+light bleeding
+lighter bleeding
+vaginal dryness
+vaginal dry sensation
+vaginal itch
+vaginal itching
+vaginal irritation
+pain during intercourse
+painful intercourse
+dyspareunia
+low libido
+decreased libido
+urinary urgency
+frequent urination
+urinary frequency
+urinary tract infections
+UTIs
+mood swing
+mood swings
+irritability
+anxiousness
+depression
+sleep disturbance
+sleep disturbances
+concentration difficulty
+difficulty concentrating
+brain fog
+memory problem
+memory problems
+joint pain
+joint pains
+joint stiffness
+muscle ache
+muscle aches
+osteoporosis
+bone loss
+dry skin
+skin dryness
+skin thinning
+thin skin
+hair thinning
+hair loss
+increased facial hair
+weight gain
+abdominal fat
+slowed metabolism
+tiredness
+high cholesterol
+increased LDL
+headache
+headaches
+palpitation
+palpitations
+breast tenderness
+tender breasts
+breast fullness loss
+tingling
+tingling sensation
+paresthesia
+dizziness
+dizzy spells
+sleeplessness
+sleep disturbance
+disturbed sleep
+insomnia
